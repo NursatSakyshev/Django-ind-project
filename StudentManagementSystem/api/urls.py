@@ -4,7 +4,7 @@ from .views import CourseViewSet, GradeViewSet, StudentViewSet, AttendanceViewSe
 router = DefaultRouter()
 router.register(r'grades', GradeViewSet, basename='grade')
 router.register(r'attendance', AttendanceViewSet, basename='attendance')
-router.register(r'notifications', NotificationViewSet, basename='notification')
+router.register(r'notifications', NotificationViewSet)
 router.register(r'courses', CourseViewSet)
 router.register(r'students', StudentViewSet)
 

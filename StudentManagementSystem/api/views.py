@@ -1,4 +1,5 @@
 from rest_framework.viewsets import ModelViewSet
+# from api.permissions import IsStudent, IsTeacher
 from attendance.models import Attendance
 from notifications.models import Notification
 from students.models import Student
@@ -19,6 +20,10 @@ class StudentViewSet(ModelViewSet):
 class GradeViewSet(ModelViewSet):
     queryset = Grade.objects.all()
     serializer_class = GradeSerializer
+    # def get_permissions(self):
+    #     if self.action in ['create', 'update', 'destroy']:
+    #         return [IsTeacher()]
+    #     return [IsStudent()]
 
 class AttendanceViewSet(ModelViewSet):
     queryset = Attendance.objects.all()
