@@ -75,9 +75,9 @@ DJOSER = {
     'USER_CREATE_PASSWORD_RETYPE': True,  
     'USERNAME_FIELD': 'email',           
     'SERIALIZERS': {
-        'user_create': 'djoser.serializers.UserCreateSerializer',
-        'user': 'djoser.serializers.UserSerializer',
-        'current_user': 'djoser.serializers.UserSerializer',
+       'user_create': 'users.serializers.CustomUserCreateSerializer',
+        # 'user': 'djoser.serializers.UserSerializer',
+        # 'current_user': 'djoser.serializers.UserSerializer',
     },
 }
 

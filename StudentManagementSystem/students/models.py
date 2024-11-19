@@ -3,7 +3,7 @@ from django.conf import settings
 from courses.models import Course
 
 class Student(models.Model):
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    # user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     date_of_birth = models.DateField()

@@ -9,8 +9,7 @@ class User(AbstractUser):
             ('student', 'Student'),
             ('teacher', 'Teacher'),
             ('admin', 'Admin'),
-        ],
-        default='student',
+        ]
     )
 
     def __str__(self):
