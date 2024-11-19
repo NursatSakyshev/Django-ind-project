@@ -5,6 +5,7 @@ class Course(models.Model):
     description = models.TextField()
     start_date = models.DateField()
     end_date = models.DateField()
+    # students = models.ManyToManyField('students.Student', related_name='courses')
 
     def __str__(self):
         return self.name
